@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/produtos.css">
+
+    <title>Café tradicional</title>
+
+</head>
+<body>
+    
+    <!--
+    <div class="cardapio">
+        <div class="item">
+            <div class="menuimg">
+                <img src="../img/café/cafetradicional.jpg" alt="">
+            </div>
+            <div class="titulo">Café Tradicional</div>
+            <div class="descricao"></div>
+            <div class="preco">R$ 2.99</div>
+        </div>
+    </div>
+-->
+
+
+    <!--Form-->
+
+
+    <div id="main-container">
+        <h1>Compre</h1>
+        <form action="" id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail para contato" data-min-length="2" data-email-validate>
+            </div>
+            <div class="full-box">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome e Sobrenome" data-required data-min-length="3" data-max-length="16">
+            </div>
+            <div class="full-box">
+                <label for="adreess">Endereço</label>
+                <input type="text" name="adreess" id="adress" placeholder="Digite seu endereço" >
+            </div>
+            <div class="full-box">
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" placeholder="Numero para contato"  data-required data-min-length="9" data-max-length="11">
+            </div>
+            <div class="full-box">
+                <label for="qtd">Quantidade</label>
+                <input type="number" name="qtd" id="qtd">
+            </div>
+            
+            <div class="full-box">
+                <label>Formas de pagamento</label>
+                <select>
+                    <option></option>
+                    <option>Débito</option>
+                    <option>Crédito</option>
+                    <option>Pix</option>
+                    <option>Vale alimentação</option>
+                </select>
+            </div>
+            <div class="">
+                <button class="submit">Finalizar pedido</button>
+                <button class="submit">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

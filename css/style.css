@@ -1,0 +1,365 @@
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: rgba(169, 169, 169, 0.776);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+a {
+    color: #000;
+}
+
+
+/*header*/
+.container-header {
+    display: flex;
+}
+.container-header-nomelogo .title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+.container-header-nomelogo {
+    display: inline-flex;
+}
+.container-header-nomelogo .logo {
+    margin-right: 20px;
+}
+.container-header-nomelogo .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.navbar a{
+    display: inline-flex;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 10px;
+    align-items: center;
+}
+.navbar a:hover {
+    font-size: 1.8rem;
+    color: #F79920;
+}
+.navbar {
+    margin-top: 5px;
+    margin-right: 80px;
+}
+
+#menu-btn {
+    display: none;
+}
+
+/*icones*/
+.btn {
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.7rem;
+    color: #000 ;
+    cursor:pointer
+}
+
+/*home*/
+.container-home {
+    width: 100vw;
+    height: 80vh;
+    background-image: url('../img/backgroundhome.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-home .title-h1 {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+.container-home .title-h1 h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+/*menu*/
+.container-geral {
+    display: flex;
+    justify-content: center;
+    
+}
+.container-geral .menu {
+    width: 70vw;
+    height: auto;
+    background-color: #fff;
+}
+
+.hot_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    height: 50px;
+    background-color: #bebec0;
+}
+.hot_bar a {
+    color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.group1{
+    display: block;
+    margin: 20px;
+}
+
+.categoria {
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 50px;
+}
+
+.cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cardapio .item {
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.menuimg  img{
+    width: 280px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cardapio .item .titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cardapio .item .descricao {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cardapio .item .preco {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.und {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/*footer*/
+
+footer {
+    background-color: #30323B;
+    height: 200px;
+}
+.direitos {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    color: #bebec0;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media (max-width:800px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%; right: -100%;
+        background: rgba(169, 169, 169, 0.776); 
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .navbar.active {
+        right: 0;
+    }
+    .navbar a {
+        color: #fff;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+    
+    .fa-shopping-cart,  .fa-search {
+        display: none;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .container-home {
+        width: 100vw;
+        height: 60vh;
+        
+    }
+    .container-home .title-h1 {
+        padding-top: 30px;
+    }
+    .container-home .title-h1 h1 {
+        font-size: 3.5rem;
+    }
+    footer {
+        height: 150px;
+    }
+    .direitos {
+        padding-top: 75px;
+    }
+    
+    .hot_bar {
+        height: 50px;
+    }
+    .hot_bar a {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+    .cardapio .item {
+        width: 280px;
+    }
+    .menuimg  img{
+        width: 250px;
+    }
+    
+}
+
+@media (max-width: 450px) {
+
+    .btn {
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+    .container-header-nomelogo .title {
+        color: #fff;
+        font-size: 2rem;
+        margin-right: 70px;
+        margin-top: 10px;
+    }
+    .navbar {
+        width: 20rem;
+    }
+
+    .container-home {
+        width: 100vw;
+        height: 50vh;
+        
+    }
+    .container-home .title-h1 {
+        padding-top: 20px;
+    }
+    .container-home .title-h1 h1 {
+        font-size: 2.5rem;
+    }
+    footer {
+        height: 100px;
+    }
+    .direitos {
+        padding-top: 50px;
+    }
+    
+    .hot_bar {
+        height: 40px;
+    }
+    .hot_bar a {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .cardapio .item {
+        width: 250px;
+    }
+    .menuimg  img{
+        width: 220px;
+    }
+    .cardapio .item .titulo {
+        font-size: 16px;
+    }
+    
+    .cardapio .item .descricao {
+        font-size: 12px;
+    }
+    
+    .cardapio .item .preco {
+        font-size: 14px;
+    }
+    .categoria {
+        font-size: 13px;
+        margin: 30px;
+    }
+    
+}
+
+@media (max-width: 390px) {
+
+    .container-home {
+        height: 50vh;
+    }
+    .container-home .title-h1 h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        height: 100px;
+    }
+    .direitos {
+        padding-top: 50px;
+    }
+    
+    .hot_bar {
+        height: 35px;
+    }
+    .hot_bar a {
+        margin-right: 8px;
+        margin-left: 8px;
+        font-size: 0.8rem;
+    }.cardapio .item {
+        width: 200px;
+    }
+    .menuimg  img{
+        width: 180px;
+    }
+    .cardapio .item .titulo {
+        font-size: 14px;
+    }
+    
+    .cardapio .item .descricao {
+        font-size: 10px;
+    }
+    
+    .cardapio .item .preco {
+        font-size: 12px;
+    }
+    .categoria {
+        font-size: 11px;
+        margin: 25px;
+    }
+}

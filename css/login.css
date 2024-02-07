@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+input, label {
+    display: block;
+    outline: none;
+    width: 100%;
+}
+a {
+    color: #9D0919;
+}
+
+body {
+    background-image: url('../img/loginandcadastro.jpg');
+    background-size: cover;
+}
+
+#main-container {
+    margin-top: 25vh;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+.spacing {
+    margin-right: 2.5%;
+}
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+input:focus {
+    border-color: #9D0919;
+}
+button[type="submit"] {
+    background-color: #9D0919;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 1.5rem;
+}
+#agreement {
+    margin-right: 5px;
+}
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+.error-validation {
+    color: #9D0919;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+}
+.template {
+    display: none;
+}
+div .login {
+    font-size: 1.2rem;
+}
+
+
+::placeholder {
+    font-size: 1.2rem;
+}
+button {
+    margin-bottom: 40px;
+    padding: 10px;
+    width: 450px;
+}
+button a {
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:430px) {
+    #main-container {
+        width: 400px;
+    }
+    button[type="submit"] {
+        font-size: 1.4rem;
+    }
+    
+    
+    button {
+        width: 350px;
+    }
+}
